@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:providerexample/halamantiga.dart';
 
 class HalamanDua extends StatelessWidget {
   final String myData;
@@ -19,7 +20,10 @@ class HalamanDua extends StatelessWidget {
             ),
             MaterialButton(
               child: Text('Ke Halaman Tiga'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => HalamanTiga(myData)));
+              },
             )
           ],
         ),

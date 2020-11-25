@@ -6,10 +6,11 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  final String myData = 'Data Dari MyApp';
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HalamanSatu(),
+      home: HalamanSatu(myData),
     );
   }
 }
